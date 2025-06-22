@@ -4,7 +4,7 @@ function ABES() {
         document.getElementById("btn").addEventListener("click", function () {
 
                 window.alert('Welcome to home page');
-                window.location.href = "ABES.html";
+                window.location.href = "index.html";
         });
 
 }
