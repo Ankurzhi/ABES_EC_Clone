@@ -1,38 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ABES.css">
-</head>
-
-<body id="bdy">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College for MCA , Btech ...</title>
+    <link rel="icon" href="site_logo.jpeg" type="image/png" id="site_logo" />
+    <link rel="stylesheet" href="ABES.css" />
+  </head>
+  <body id="body">
     <div class="navbar">
-        <div class="logo">
-            <img src="D:Desktop\Lab_BMC251\abesimg.png" alt="ABES Logo" />
-          
-        </div>
-        <div class="nav-links">
-            <a href="About.html">About</a>
-            <a href="Admissions.html">Admissions</a>
-            <a href="Academics.html">Academics</a>
-            <a href="Clubs.html">Clubs</a>
-            <a href="Campus.html">Campus</a>
-            <a href="Contact_us.html">Contact us</a>
-            <a href="Placement.html">Placements</a>
-            <a href="Reserch.html">Research</a>
-            <a href="Enterpreneurship.html">Entrepreneurship</a>
-        </div>
+      <div class="logo">
+        <img src="D:Desktop\Lab_BMC251\abesimg.png" alt="ABES Logo" />
+      </div>
+      <div class="nav-links">
+        <a href="About.html">About</a>
+        <a href="Admissions.html">Admissions</a>
+        <a href="Academics.html">Academics</a>
+        <a href="Clubs.html">Clubs</a>
+        <a href="Campus.html">Campus</a>
+        <a href="Contact_us.html">Contact us</a>
+        <a href="Placement.html">Placements</a>
+        <a href="Reserch.html">Research</a>
+        <a href="Enterpreneurship.html">Entrepreneurship</a>
+      </div>
     </div>
-    <p>
-        Contact me..
-    </p>
 
     <button onclick="ABES()" id="btn">Home Page</button>
-    
-    <script src="./abes.js"></script>
-</body>
 
-</html>
+    <div id="contact-container">
+      <!-- Contact Form -->
+      <div>
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="phone" placeholder="Phone Number" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div id="contact-info">
+        <h3>Our Address</h3>
+        <div class="info-item">📍 Abes College Ghaziabad</div>
+        <div class="info-item">📞Phone no. 01207135112</div>
+        <div class="info-item">✉️info@abes.ac.in</div>
+
+        <!-- Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7003.713595969269!2d77.43658057770999!3d28.63405370000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee22c60837b7%3A0x7c35343eceb7bde0!2sABES%20Engineering%20College!5e0!3m2!1sen!2sin!4v1757048291603!5m2!1sen!2sin"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row footer">
+        <div class="col-1">
+          <p>Mandatory Disclosure</p>
+          <a href="Mandatory Disclosure">Mandatory Disclosure</a>
+          <a href="AICTE Approval">AICTE Approval</a>
+          <a href="University Affiliation Letter"
+            >University Affiliation Letter</a
+          >
+          <a href="Education Verification">Education Verification</a>
+          <a href="Audited Statement">Audited Statement</a>
+
+          <a href="Student's Request Form (SIS)"
+            >Student's Request Form (SIS)</a
+          >
+          <a href="Academic Calendar">Academic Calendar</a>
+          <a href="ABESEC Brochure 2021-22">ABESEC Brochure 2021-22</a>
+          <a href="Hostel Rule Booklet">Hostel Rule Booklet</a>
+        </div>
+      </div>
+      <div class="col-1 add">
+        <p>Address</p>
+        <p id="address">19th KM Stone</p>
+        <p id="address">NH-09 Ghaziabad (UP)</p>
+        <p id="address">PIN - 201009</p>
+        <p id="address">Phone no. 01207135112</p>
+        <p id="address">Email: webadmin@abes.ac.in</p>
+
+        <div class="col-1 social">
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-3 foter">
+        <p>Important links</p>
+        <a href="Admissions">Admissions</a>
+        <a href="Career">Career</a>
+        <a href="CETL (SIS)">CETL (SIS)</a>
+        <a href="I & E Policies">I & E Policies</a>
+        <a href="Library">Libraryt</a>
+        <a href="Placement Referal Link">Placement Referal Link</a>
+      </div>
+    </footer>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDDkQgA9y9qUKCi3abm1nkq47imtdFLKH8",
+        authDomain: "abesec-2facd.firebaseapp.com",
+        databaseURL: "https://abesec-2facd-default-rtdb.firebaseio.com",
+        projectId: "abesec-2facd",
+        storageBucket: "abesec-2facd.appspot.com", // fixed typo here
+        messagingSenderId: "4236965423",
+        appId: "1:4236965423:web:11d760f84e1d14ff47f8da",
+        measurementId: "G-1VVNRSNRDP"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+
+      // Get form element
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Get form values
+        const name = form.querySelector('input[placeholder="Full Name"]').value;
+        const email = form.querySelector('input[placeholder="Email Address"]').value;
+        const phone = form.querySelector('input[placeholder="Phone Number"]').value;
+        const subject = form.querySelector('input[placeholder="Subject"]').value;
+        const message = form.querySelector('textarea[placeholder="Your Message"]').value;
+
+        // Save to Firebase
+        db.ref("contacts").push({
+          name: name,
+          email: email,
+          phone: phone,
+          subject: subject,
+          message: message,
+          createdAt: new Date().toISOString(),
+        })
+        .then(function () {
+          alert("✅ Data saved successfully!");
+          form.reset();
+        })
+        .catch(function (error) {
+          alert("❌ Error: " + error);
+        });
+      });
+    </script>
